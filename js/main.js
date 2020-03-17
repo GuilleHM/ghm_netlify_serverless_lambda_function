@@ -2,7 +2,7 @@
 // Fase de desarrollo
 // const fetchUsers = async () => await (await fetch("http://localhost:9000/getusers")).json();
 
-const fetchUsers = async () => await (await fetch(".netlify/functions/getusers")).json();
+const fetchUsers = async () => await (await fetch("/.netlify/functions/getusers")).json();
 
 fetchUsers().then(data => {
     userList = document.querySelector('#users');
